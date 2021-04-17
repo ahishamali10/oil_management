@@ -1,0 +1,75 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-04-14 02:17:28.351498",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "bra_no",
+  "order_go_detail",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062a\u0633\u0644\u0633\u0644\u064a",
+   "options": "ORD-GO-.YYYY.-"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bra_no",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0641\u0631\u0639",
+   "options": "Branch Ypc"
+  },
+  {
+   "fieldname": "order_go_detail",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0646\u0627\u0642\u0644\u0627\u062a",
+   "options": "Order Go Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Go",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-04-14 02:17:28.351498",
+ "modified_by": "Administrator",
+ "module": "Oil Management",
+ "name": "Order Go",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

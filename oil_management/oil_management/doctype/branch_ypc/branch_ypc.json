@@ -1,0 +1,47 @@
+{
+ "autoname": "Prompt",
+ "creation": "2021-04-14 01:43:02.676212",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bra_name"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "bra_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0641\u0631\u0639",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-04-14 23:32:52.294415",
+ "modified_by": "Administrator",
+ "module": "Oil Management",
+ "name": "Branch Ypc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "bra_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "bra_name",
+ "track_changes": 1,
+ "track_views": 1
+}

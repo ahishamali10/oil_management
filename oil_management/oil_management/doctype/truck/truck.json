@@ -1,0 +1,58 @@
+{
+ "autoname": "format:TRU-{#####}",
+ "creation": "2021-04-14 01:00:14.165759",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pre_no",
+  "car_no",
+  "driver_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "pre_no",
+   "fieldtype": "Select",
+   "label": "\u0641\u0627\u0635\u0644 \u0627\u0644\u0633\u064a\u0627\u0631\u0629",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nH",
+   "translatable": 1
+  },
+  {
+   "fieldname": "car_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0633\u064a\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0633\u0627\u0626\u0642"
+  }
+ ],
+ "modified": "2021-04-14 23:28:38.621042",
+ "modified_by": "Administrator",
+ "module": "Oil Management",
+ "name": "Truck",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

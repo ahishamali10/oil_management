@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include oil_management *.css
+recursive-include oil_management *.csv
+recursive-include oil_management *.html
+recursive-include oil_management *.ico
+recursive-include oil_management *.js
+recursive-include oil_management *.json
+recursive-include oil_management *.md
+recursive-include oil_management *.png
+recursive-include oil_management *.py
+recursive-include oil_management *.svg
+recursive-include oil_management *.txt
+recursive-exclude oil_management *.pyc
