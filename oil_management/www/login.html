@@ -1,0 +1,114 @@
+{% extends "templates/web.html" %}
+
+{% block style %}
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block page_content %}
+
+<noscript>
+		<div class="text-center my-5">
+			<h4>{{ _("Javascript is disabled on your browser") }}</h4>
+			<p class="text-muted">{{ _("You need to enable JavaScript for your app to work.") }}<br>{{ _("To enable it follow the instructions in the following link: {0}").format("<a href='https://enable-javascript.com/'>enable-javascript.com</a></p>") }}
+		</div>
+	</noscript>
+<div dir="rtl" class="flex items-start justify-center py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <section>
+      <img class="mx-auto h-24 w-auto" src="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}" alt="Workflow">
+      <div class="flex page-card-head mt-8">
+			<span class="indicator blue" data-text="تسجيل الدخول"></span>
+		</div>
+    </section>
+	<!--for login-->
+	<section class="for-login">
+    <form class="form-signin form-login -mt-5 space-y-6" action="#" method="POST">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="login_email" class="sr-only">البريد الإلكتروني</label>
+          <input id="login_email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="البريد الإلكتروني">
+        </div>
+        <div>
+          <label for="login_password" class="sr-only">كلمة المرور</label>
+          <input id="login_password" name="login_password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="كلمة المرور">
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <div class="text-sm">
+          <a href="#forgot" class="font-medium text-indigo-600 hover:text-indigo-500">
+            هل نسيت كلمة المرور؟
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          تسجيل الدخول
+        </button>
+      </div>
+    </form>
+	</section>
+
+	<!--for forgot password-->
+	<section class="for-forgot">
+    <form class="form-signin form-login -mt-5 space-y-6" action="#" method="POST">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="forgot_email" class="sr-only">البريد الإلكتروني</label>
+          <input id="forgot_email" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="البريد الإلكتروني">
+        </div>
+		</div>
+
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          تسجيل الدخول
+        </button>
+      </div>
+    </form>
+	
+      <div class="flex items-center justify-between mt-2">
+        <div class="text-sm">
+          <a href="#login" class="font-medium text-indigo-600 hover:text-indigo-500">
+            الرجوع الى تسجيل الدخول
+          </a>
+        </div>
+      </div>
+	</section>
+  </div>
+</div>
+
+
+<!--<section class='for-forgot'>
+	<div class="login-content page-card" style="margin-top: 20px;">
+	<form class="form-signin form-forgot hide" role="form">
+		<div class="page-card-head">
+			<span class="indicator blue" data-text="{{ _('Forgot Password') }}"></span></div>
+		<input type="email" id="forgot_email"
+			class="form-control" placeholder="{{ _('Email Address') }}" required autofocus>
+		<button class="btn btn-sm btn-primary btn-block btn-forgot" type="submit">{{ _("Reset Password") }}</button>
+	</form>
+	</div>
+	<div class='form-footer'>
+		<a href="#login">{{ _("Back to Login") }}</a>
+	</div>
+</section>-->
+{% endblock %}
+
+{% block script %}
+	<script>{% include "templates/includes/login/login.js" %}</script>
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
