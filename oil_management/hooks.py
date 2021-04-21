@@ -11,11 +11,18 @@ app_color = "grey"
 app_email = "aymenit2008@gmail.com"
 app_license = "MIT"
 
+
+test_string = 'value'
+test_list = ['value']
+test_dict = {
+    'key': 'value'
+}
+
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/css/oil_management.min.css"
+app_include_css = ["/assets/css/oil_management.min.css","/assets/css/oil_management-rtl.min.css"]
 # app_include_js = "/assets/oil_management/js/oil_management.js"
 
 # include js, css files in header of web template

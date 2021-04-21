@@ -1,5 +1,9 @@
 {
 	"css/oil_management.min.css": [
 		"public/css/oil_management.css"
+	],
+"css/oil_management-rtl.min.css": [
+		"public/css/oil_management-rtl.css"
 	]
+
 }
