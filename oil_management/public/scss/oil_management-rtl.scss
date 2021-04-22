@@ -1,0 +1,19 @@
+.frappe-rtl {
+  .frappe-control[data-fieldtype=Select] .control-input .octicon-chevron-down {
+    right: auto;
+    left: 12px;
+  }
+  .indicator::before {
+    margin:0px 0px 0px 4px;
+  }
+  
+  .indicator-right::after {
+    margin:0 4px 0 0;
+  }
+
+  .page-title .title-text{
+    margin-right: 0;
+    margin-left: 7px;
+  }
+  
+}
