@@ -11,9 +11,65 @@
     margin:0 4px 0 0;
   }
 
+.review-list .btn-add-review .octicon {
+    position: relative;
+    right: 4.5px;
+    left: 0;
+}
+
+.btn-show-hide[data-v-9e0b6c7a] {
+    position: absolute;
+    left: 0;
+right:auto;
+    top: 39px;
+    z-index: 1;
+}
+
+.pin-r{
+left: 0;
+right: auto !important;
+}
+
+.data-table, .grid-report, .results, .section-header {
+    direction: rtl;
+}
+
+.avatar-small {
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.pull-right{
+float: left !important;
+}
+
+@media (min-width: 768px){
+.navbar-right.flip, .navbar-right:last-child {
+    margin-left: 15px;
+    margin-right: auto;
+}
+}
+
+.form-sidebar .form-shared .octicon, .form-sidebar .form-viewers .octicon {
+    position: relative;
+    right: 4.5px;
+    left: 0;
+}
+
   .page-title .title-text{
     margin-right: 0;
     margin-left: 7px;
   }
   
+}
+
+
+.frappe-chat>.frappe-chat-popper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+right: auto;
+    margin: 20px;
+    z-index: 1035;
 }
